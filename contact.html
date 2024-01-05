@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel = "icon" href = "pics/icon.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <title>Sociography | Contact us</title>
+    <button onclick="document.location='home.html'" id="home">Home</button>
+    
+</head>
+<style>
+    body{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+</style>
+<body>
+    <center>
+    <h1><u>Contact Us</u></h1>
+    <p><i>(* Mandatory to fill)</i></p><br>
+     <form action="/action_page.php">
+  <label for="fname">First name*:</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+  <label for="lname">Last name*:</label>
+  <input type="text" id="lname" name="lname" required><br><br>
+  <label for="email">E-mail*:</label>
+  <input type="email" id="email" name="email"required ><br><br>
+  <label for="dob">Date of Birth*:</label>
+  <input type="date" id="dob" name="dob" required><br>
+  <P>Gender*:</P><br>
+  <input type="radio" id="male" name="GENDER" value="Male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="GENDER" value="Female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="others" name="GENDER" value="Others">
+  <label for="others">Others</label><br><br>
+  <label for="resume">Query*:</label>
+  <input type="file" id="resume" name="resume" required><br>
+  <label for="submit"></label><br>
+  <input type="submit" id="submit" name="submit"><br>
+  <label for="reset"></label><br>
+  <input type="reset" id="reset" name="reset"><br>
+  
+</form>
+</center> 
+</body>
+</html>

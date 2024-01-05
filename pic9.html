@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel = "icon" href = "pics/icon.jpg" type = "image/x-icon">
+    <title>Sociography | @samridhiamar_pic9</title>
+    <button onclick="document.location='home.html'" id="home">Home</button>
+</head>
+<script>
+  function liked(){
+        var element = document.getElementById("like");
+        element.classList.toggle("liked");
+      }
+</script>
+<body>
+    <div class="user">
+        <img src="img_avatar2.png" width="3%" id="float">
+        <h2>@samridhiamar</h2><br><br>
+        <img src="pics/9.jpg"><br><br>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <button id="like" onclick="liked()">
+            <i class="fa fa-thumbs-up"></i>
+            <span class="icon">Like</span>
+          </button>
+
+</body>
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: black;
+}
+button {
+  background: #fff;
+  border: unset;
+  outline: 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #65676b;
+  padding: 5px 10px;
+}
+button.liked {
+  color: #0571ed;
+}
+button.liked i{
+  animation: anim 0.5s ease-in-out;
+  -webkit-animation: anim 0.5s ease-in-out;
+}
+
+@keyframes anim {
+  100% {
+    transform: rotate(-15deg) scale(1.3);
+    -webkit-transform: rotate(-15deg) scale(1.3);
+    -moz-transform: rotate(-15deg) scale(1.3);
+    -ms-transform: rotate(-15deg) scale(1.3);
+    -o-transform: rotate(-15deg) scale(1.3);
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+  }
+}
+
+</style>
+</html>
